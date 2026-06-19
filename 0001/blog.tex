@@ -1,0 +1,48 @@
+Q.1. Multiple of 3 or 5
+   If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.Find the sum of all the multiples of 3 or 5 below 1000.
+
+
+[b]A Constant Time Approach[/b]
+
+This is a mathematical solution with a time complexity of O(1). I used the basic formula for the addition of natural numbers and modified it a little bit for our specific situation.
+
+[g][b]Approach:[/b][/g]
+We can find the sum of the multiples of a number as follows:
+$$
+\begin{aligned}
+&= (x\times1) + (x\times2) + (x\times3) + \cdots + (x\times n) \\
+&= x\times(1+2+3+\cdots+n) \\
+&= x\times\frac{n(n+1)}{2} \\
+&= x\times\frac{n^2+n}{2}
+\end{aligned}
+$$
+
+Using this formula, we can calculate the sum of the multiples of 3 and the multiples of 5, and then add them together. 
+
+However, there is a catch. We only want to add the common multiples of 3 and 5 once. Because we calculated them separately, these common multiples are counted two times in our current total. 
+
+To fix this, we need to subtract the common multiples that were added twice. Since the common multiples of 3 and 5 happen to be the multiples of 15, we calculate the sum of the multiples of 15 and subtract it from our final answer. This gives us the desired output.
+
+Finally, regarding the 999/3 part in the program: this calculates the maximum natural number that can be multiplied by 3 without generating a number of 1000 or greater. The exact same process is repeated for 5 and 15.
+
+[g]C++ Implementation:[/g]
+[code=cpp]
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n = 999/3;
+    int m = 999/5;
+    int p = 999/15;    // for common multiples
+
+    int sum_mltpl_3 = 3 * ((n*n + n)/2);
+    int sum_mltpl_5 = 5 * ((m*m + m)/2);
+    int sum_mltpl_15 = 15 * ((p*p + p)/2);
+
+    int result = sum_mltpl_3 + sum_mltpl_5 - sum_mltpl_15;
+
+    cout << "The sum is: " << result <<endl;
+    return 0;
+}
+[/code]
