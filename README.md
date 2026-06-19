@@ -24,5 +24,22 @@ Feel free to give feedback on my algorithms or discuss on a
 specific topic based on the used approach, or give any
 suggestions to improve my program.
 
-You can find me in [Project Euler](https://projecteuler.net/about)
+## How is it different from [_Codeforces?_](https://codeforces.com/)
+
+**Project Euler** is more focused on the mathematical part, all
+of its problems revolves aroun mathematics. It does not
+care what algorithm you use or how do you solve it, but it
+only needs the result of a complex mathematical problem.
+
+On the other hand, **Codeforces** is a CP website that
+features problems that is suited for Competitive programming.
+To be honest, **Codeforces** is more feature rich and better
+in genera and it cares about your algorithm unlike **Project
+Euler** (yk, it's CP website after all). Above all, **Codeforces**
+stores your submitted code that you can check out later.
+
+Although, **Project Euler** is an unique piece because it's
+unique, you know what I'm saying? XD
+
+BTW, you can find me in [Project Euler](https://projecteuler.net/about)
 website as **`galaxy38`** :>
