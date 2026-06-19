@@ -33,8 +33,8 @@ only needs the result of a complex mathematical problem.
 
 On the other hand, **Codeforces** is a CP website that
 features problems that is suited for Competitive programming.
-To be honest, **Codeforces** is more feature rich and better
-in genera and it cares about your algorithm unlike **Project
+To be honest, **Codeforces** is more feature rich, has a better
+in general and it cares about your algorithm unlike **Project
 Euler** (yk, it's CP website after all). Above all, **Codeforces**
 stores your submitted code that you can check out later.
 
